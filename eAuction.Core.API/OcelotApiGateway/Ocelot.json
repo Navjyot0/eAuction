@@ -1,0 +1,140 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44383"
+        }
+      ],
+      "UpstreamPathTemplate": "/buyer",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44397"
+        }
+      ],
+      "UpstreamPathTemplate": "/seller",
+      "UpstreamHttpMethod": [ "GET", "POST" ] //,
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "Bearer",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/AddProduct",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44397"
+        }
+      ],
+      "UpstreamPathTemplate": "/e-auction/api/v1/seller/add-product", //"/seller/addproduct",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/GetProductDetails",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44397"
+        }
+      ],
+      "UpstreamPathTemplate": "/e-auction/api/v1/seller/show-bids", //"/seller/getdetails",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/GetProductList",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44397"
+        }
+      ],
+      "UpstreamPathTemplate": "/e-auction/api/v1/seller/get-product", //"/seller/getdetails",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/DeleteProduct",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44397"
+        }
+      ],
+      "UpstreamPathTemplate": "/e-auction/api/v1/seller/delete", //"/seller/delete",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buyer/PlaceBid",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44383"
+        }
+      ],
+      "UpstreamPathTemplate": "/e-auction/api/v1/buyer/place-bid", //"/buyer/place-bid",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Buyer/UpdateBid",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44383"
+        }
+      ],
+      "UpstreamPathTemplate": "/e-auction/api/v1/buyer/update-bid", //"/buyer/update-bid",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Account",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/Account",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Account/CreateUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/Account/CreateUser",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/WeatherForecast",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44378"
+        }
+      ],
+      "UpstreamPathTemplate": "/Account/WeatherForecast",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    }
+  ]
+}
