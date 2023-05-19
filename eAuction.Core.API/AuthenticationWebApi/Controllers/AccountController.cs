@@ -76,5 +76,15 @@ namespace AuthenticationWebApi.Controllers
 
             return authenticationResponse;
         }
+
+        [HttpPost]
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Response.Cookies.Delete("jwtToken");
+            HttpContext.Response.Cookies.Delete("username");
+            return SignOut();
+        }
+
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5jDXqG2IqVuUdZWhOxgndq007lLzJExaPZpdMYezvkrK8d8G4C5TnUbkVzjdh3Em1VQ6i08mOF2CAkBi7uUFcg==",
+  "dgSpecHash": "J9G+hCJmqSHi4shqvkiuoikVh5IItS22cimqOaa/UdY1LqnNI9MXaObed14NmopNVb3dVUWzSiE+ApkiXhr4aA==",
   "success": true,
-  "projectFilePath": "D:\\eAuction\\eAuction2.0-main\\AuthenticationWebApi\\AuthenticationWebApi.csproj",
+  "projectFilePath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\AuthenticationWebApi\\AuthenticationWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\aspnetcore.identity.mongodbcore\\3.1.2\\aspnetcore.identity.mongodbcore.3.1.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",

@@ -11,6 +11,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthInterceptorService } from './auth-interceptor.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { MakeBidComponent } from './make-bid/make-bid.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
     HomeComponent,
     LoginComponent,
     NavComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductDetailsComponent,
+    AddProductComponent,
+    MakeBidComponent
   ],
   imports: [
     BrowserModule,

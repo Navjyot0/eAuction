@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "13jfCGZl3Orn7sIGWhAMabNLHmWDsA2QACKZ6t/QLYTf/q7iiR3LqvzmT10ochOpktYnzsUkeZ5uSiMxuiY4hQ==",
+  "dgSpecHash": "KHtk8zBdGWyajumS3eV7pYGwQ8PHhz2URizbgmL8v+PL6m7o0GHkA6djrUQbsINdqzXHa39cQJO8hdv3RhVBpw==",
   "success": true,
-  "projectFilePath": "D:\\eAuction\\eAuction2.0-main\\SellerWebApi\\SellerWebApi.csproj",
+  "projectFilePath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\SellerWebApi\\SellerWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

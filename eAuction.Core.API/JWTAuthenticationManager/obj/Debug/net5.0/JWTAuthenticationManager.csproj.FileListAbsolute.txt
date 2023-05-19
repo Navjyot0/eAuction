@@ -57,3 +57,15 @@ D:\eAuction\eAuction2.0-main\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthen
 D:\eAuction\eAuction2.0-main\JWTAuthenticationManager\obj\Debug\net5.0\refint\JWTAuthenticationManager.dll
 D:\eAuction\eAuction2.0-main\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.pdb
 D:\eAuction\eAuction2.0-main\JWTAuthenticationManager\obj\Debug\net5.0\ref\JWTAuthenticationManager.dll
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\bin\Debug\net5.0\JWTAuthenticationManager.deps.json
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\bin\Debug\net5.0\JWTAuthenticationManager.dll
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\bin\Debug\net5.0\JWTAuthenticationManager.pdb
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.csproj.AssemblyReference.cache
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.AssemblyInfoInputs.cache
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.AssemblyInfo.cs
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.csproj.CoreCompileInputs.cache
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.dll
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\refint\JWTAuthenticationManager.dll
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.pdb
+D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\ref\JWTAuthenticationManager.dll

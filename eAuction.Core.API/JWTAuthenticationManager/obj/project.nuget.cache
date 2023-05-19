@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lahHW1jp5eHqI82YDdyr8LAjnaD8g6t+A5JMJLMV4t/Ka8sBVOg+tJue1Oi0bAP2che7lm+ReFZvWvLN45ohTg==",
+  "dgSpecHash": "IA22J8+mNJ8+F4ZEozpksULpZ5Uxs2yeTanjQ4y9bNOGvZsl6eJzpmyydJ6aIuD/MvHxsPmiAYorSVCaP3W+Lg==",
   "success": true,
-  "projectFilePath": "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj",
+  "projectFilePath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

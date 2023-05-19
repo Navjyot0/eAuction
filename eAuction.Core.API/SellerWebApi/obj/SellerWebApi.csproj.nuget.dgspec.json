@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\eAuction\\eAuction2.0-main\\SellerWebApi\\SellerWebApi.csproj": {}
+    "D:\\eAuction\\eAuction\\eAuction.Core.API\\SellerWebApi\\SellerWebApi.csproj": {}
   },
   "projects": {
-    "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj": {
+    "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj",
+        "projectUniqueName": "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj",
         "projectName": "JWTAuthenticationManager",
-        "projectPath": "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj",
+        "projectPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\obj\\",
+        "outputPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -90,14 +90,14 @@
         }
       }
     },
-    "D:\\eAuction\\eAuction2.0-main\\SellerWebApi\\SellerWebApi.csproj": {
+    "D:\\eAuction\\eAuction\\eAuction.Core.API\\SellerWebApi\\SellerWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eAuction\\eAuction2.0-main\\SellerWebApi\\SellerWebApi.csproj",
+        "projectUniqueName": "D:\\eAuction\\eAuction\\eAuction.Core.API\\SellerWebApi\\SellerWebApi.csproj",
         "projectName": "SellerWebApi",
-        "projectPath": "D:\\eAuction\\eAuction2.0-main\\SellerWebApi\\SellerWebApi.csproj",
+        "projectPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\SellerWebApi\\SellerWebApi.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\eAuction\\eAuction2.0-main\\SellerWebApi\\obj\\",
+        "outputPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\SellerWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -117,8 +117,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj": {
-                "projectPath": "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj"
+              "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj": {
+                "projectPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj"
               }
             }
           }

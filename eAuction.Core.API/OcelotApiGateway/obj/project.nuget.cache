@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JQjfd18tTs2EA/ot4r3wXsPVIr4sfMtkUvriE/xFp6oTnqTocIsbqSyKuGpn5HEkQnYg0pqDe+/2ZRG46eMbdQ==",
+  "dgSpecHash": "9CabWmY02j3iZpk+GLE5QqbincQ6pra7xUZntQjcRoiAQ1jwUDkL7icBLkvXVx2tJ18TDCRLLB0Uc9gjVGUTUQ==",
   "success": true,
-  "projectFilePath": "D:\\eAuction\\eAuction2.0-main\\OcelotApiGateway\\OcelotApiGateway.csproj",
+  "projectFilePath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\OcelotApiGateway\\OcelotApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\fluentvalidation\\8.5.0\\fluentvalidation.8.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

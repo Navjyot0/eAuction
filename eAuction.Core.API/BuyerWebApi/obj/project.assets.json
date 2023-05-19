@@ -2539,11 +2539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\eAuction\\eAuction2.0-main\\BuyerWebApi\\BuyerWebApi.csproj",
+      "projectUniqueName": "D:\\eAuction\\eAuction\\eAuction.Core.API\\BuyerWebApi\\BuyerWebApi.csproj",
       "projectName": "BuyerWebApi",
-      "projectPath": "D:\\eAuction\\eAuction2.0-main\\BuyerWebApi\\BuyerWebApi.csproj",
+      "projectPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\BuyerWebApi\\BuyerWebApi.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\eAuction\\eAuction2.0-main\\BuyerWebApi\\obj\\",
+      "outputPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\BuyerWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2563,8 +2563,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj": {
-              "projectPath": "D:\\eAuction\\eAuction2.0-main\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj"
+            "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj": {
+              "projectPath": "D:\\eAuction\\eAuction\\eAuction.Core.API\\JWTAuthenticationManager\\JWTAuthenticationManager.csproj"
             }
           }
         }

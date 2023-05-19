@@ -13,7 +13,7 @@ namespace JWTAuthenticationManager
     public class JWTTokenHander
     {
         public const string JWT_Security_Key = "DweFEfqEfweEFefwefwef33423sdfEDFWEf";
-        private const int JWT_Token_Validity_Mins = 20;
+        private const int JWT_Token_Validity_Mins = 1;
         private readonly List<UserAccount> _userAccountsList;
 
         //public JWTTokenHander()

@@ -27,14 +27,6 @@ namespace JWTAuthenticationManager
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };
-                //x.Events = new JwtBearerEvents
-                //{
-                //    OnMessageReceived = context =>
-                //    {
-                //        context.Token = context.Request.Cookies["jwt"];
-                //        return Task.CompletedTask;
-                //    }
-                //};
             });
         }
     }
