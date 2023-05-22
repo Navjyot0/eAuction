@@ -18,7 +18,8 @@ export class MakeBidComponent {
     buyerEmailId:new FormControl('')
   });
   user:string = `${this.cookieService.get('username')}`;
-  
+  error:string|null;
+
   constructor(
     private http:HttpClient,
     private router:Router,
@@ -33,16 +34,20 @@ export class MakeBidComponent {
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    this.http.post("https://localhost:44300/e-auction/api/v1/buyer/place-bid", this.bidForm.value)
+    this.http.post("https://localhost:44300/e-auction/api/v1/buyer/place-bid", this.bidForm.value, {withCredentials:true})
     .subscribe(res=>{
       Emitters.authEmitter.emit(true);
       this.router.navigate(['/product-details/'+this.bidForm.value.productId]);
     },
     err=>{
-      console.log(err);
+      if(err.error.includes('Seller can\'t make bid'))
+        this.error='Seller can\'t make bid';
+      else if(err.error.includes('Bid end date was'))
+        this.error='Bid end date was ended';
+      else
+        this.error='API failed, please try after sometime'
+      console.log(this.error);
       Emitters.authEmitter.emit(false);
-      this.cookieService.delete('username');
-      this.cookieService.delete('jwtToken');
     });
   }
 }

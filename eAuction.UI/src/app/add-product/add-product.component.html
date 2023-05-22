@@ -28,9 +28,9 @@
       <input formControlName="bidEndDate" type="date" class="form-control" id="bidEndDate" name="bidEndDate" placeholder="Bid EndDate" required>
       <label for="bidEndDate">Bid EndDate</label>
     </div>
-    <div class="form-floating">
+    <!-- <div class="form-floating">
         <input formControlName="sellerEmailId" type="text" readonly class="form-control-plaintext" id="sellerEmailId" name="sellerEmailId">
-    </div>
+    </div> -->
     <p>Complete the form to enable button.</p>
     <button [disabled]="!productForm.valid" class="w-100 btn btn-lg btn-primary" type="submit">Add Product</button>
 </form>

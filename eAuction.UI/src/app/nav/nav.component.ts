@@ -12,6 +12,9 @@ export class NavComponent implements OnInit {
   authenticated:boolean=false;
 
   constructor(private http:HttpClient, private cookieService: CookieService){
+    Emitters.authEmitter.subscribe((auth:boolean)=>{
+      this.authenticated=auth;
+    });
   }
 
   ngOnInit(): void {
