@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "cd8636f0-48fc-44b8-b117-ef5d90058a48",
+		"name": "eAuction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Microservice",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "CreateUser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"user002@example.com\",\r\n  \"password\": \"User002@example\",\r\n  \"firstName\": \"F_User002\",\r\n  \"lastName\": \"L_User002\",\r\n  \"address\": \"Add_User002\",\r\n  \"city\": \"City_User002\",\r\n  \"state\": \"Statte_User002\",\r\n  \"pin\": \"010101\",\r\n  \"phone\": \"1234567890\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44300/Account/CreateUser",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44300",
+									"path": [
+										"Account",
+										"CreateUser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userName\": \"user002@example.com\",\r\n  \"password\": \"User002@example\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44300/Account",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44300",
+									"path": [
+										"Account"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Buyer",
+					"item": [
+						{
+							"name": "place-bid",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bidId\": \"string\",\r\n  \"productId\": \"string\",\r\n  \"bidAmount\": 0,\r\n  \"buyerEmailId\": \"string\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44300/e-auction/api/v1/buyer/place-bid",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44300",
+									"path": [
+										"e-auction",
+										"api",
+										"v1",
+										"buyer",
+										"place-bid"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Seller",
+					"item": [
+						{
+							"name": "add-product",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidXNlcjAwMkBleGFtcGxlLmNvbSIsIm5iZiI6MTY4MzU0NTY4NCwiZXhwIjoxNjgzNTQ2ODg0LCJpYXQiOjE2ODM1NDU2ODR9.m2TJ-IMAHKL2gx-FETtw6IxO8leYncepq6iBILojROA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  //\"productId\": \"strdfgsfdging\",\r\n  \"productName\": \"stsdfgfdgring\",\r\n  \"shortDescription\": \"string g fdg sfdg fdgfd gsdf gfd gsg\",\r\n  \"detailedDescription\": \"string sfgsfd gsfd gsdf sfd gsfdg f gsf gfd gsdf gdfg sdf gsfdg sfdg\",\r\n  \"category\": \"string\",\r\n  \"startingPrice\": 150,\r\n  \"bidEndDate\": \"2023-05-10T03:30:31.798Z\",\r\n  \"sellerEmailId\": \"user002@example.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44300/e-auction/api/v1/seller/add-product",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44300",
+									"path": [
+										"e-auction",
+										"api",
+										"v1",
+										"seller",
+										"add-product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show-bids",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidXNlcjAwMkBleGFtcGxlLmNvbSIsIm5iZiI6MTY4MzU0NTY4NCwiZXhwIjoxNjgzNTQ2ODg0LCJpYXQiOjE2ODM1NDU2ODR9.m2TJ-IMAHKL2gx-FETtw6IxO8leYncepq6iBILojROA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44300/e-auction/api/v1/seller/show-bids",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44300",
+									"path": [
+										"e-auction",
+										"api",
+										"v1",
+										"seller",
+										"show-bids"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update-bid",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bidId\": \"string\",\r\n  \"productId\": \"string\",\r\n  \"bidAmount\": 0,\r\n  \"buyerEmailId\": \"string\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44300/e-auction/api/v1/buyer/update-bid",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44300",
+									"path": [
+										"e-auction",
+										"api",
+										"v1",
+										"buyer",
+										"update-bid"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
