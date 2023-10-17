@@ -33,7 +33,7 @@ export class AddProductComponent {
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    this.http.post("https://localhost:44300/e-auction/api/v1/seller/add-product", this.productForm.value)
+    this.http.post("http://localhost:44397/e-auction/api/v1/seller/add-product", this.productForm.value)
     .subscribe(res=>{
       Emitters.authEmitter.emit(true);
       this.router.navigate(['/']);

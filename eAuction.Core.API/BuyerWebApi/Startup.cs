@@ -36,6 +36,7 @@ namespace BuyerWebApi
             services.AddSingleton<IMongoClient>(s => new MongoClient(Configuration.GetValue<string>("BuyerDbSettings:ConnectionString")));
             services.AddScoped<IUnitOfWork, BuyerWebApi.UnitOfWork.UnitOfWork>();
             services.AddControllers();
+            services.AddCors();
             services.AddCustomJwtAuthentication();
             services.AddSwaggerGen(c =>
             {
@@ -46,6 +47,14 @@ namespace BuyerWebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(builder =>
+            {
+                builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

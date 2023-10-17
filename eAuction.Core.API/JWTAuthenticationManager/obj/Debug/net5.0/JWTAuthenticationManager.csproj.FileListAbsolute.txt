@@ -69,3 +69,15 @@ D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0
 D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\refint\JWTAuthenticationManager.dll
 D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.pdb
 D:\eAuction\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\ref\JWTAuthenticationManager.dll
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\bin\Debug\net5.0\JWTAuthenticationManager.deps.json
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\bin\Debug\net5.0\JWTAuthenticationManager.dll
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\bin\Debug\net5.0\JWTAuthenticationManager.pdb
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.csproj.AssemblyReference.cache
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.AssemblyInfoInputs.cache
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.AssemblyInfo.cs
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.csproj.CoreCompileInputs.cache
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.dll
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\refint\JWTAuthenticationManager.dll
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\JWTAuthenticationManager.pdb
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\JWTAuthenticationManager\obj\Debug\net5.0\ref\JWTAuthenticationManager.dll

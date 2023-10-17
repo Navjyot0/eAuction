@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OcelotApiGateway
-build_property.ProjectDir = D:\eAuction\eAuction\eAuction.Core.API\OcelotApiGateway\
+build_property.ProjectDir = D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\OcelotApiGateway\

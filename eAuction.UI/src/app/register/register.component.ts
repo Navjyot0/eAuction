@@ -29,7 +29,7 @@ export class RegisterComponent{
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    this.http.post("https://localhost:44300/Account/CreateUser", this.profileForm.value)
+    this.http.post("https://localhost:5001/Account/CreateUser", this.profileForm.value)
     .subscribe(()=>{this.router.navigate(['/login'])});
   }
 }

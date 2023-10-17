@@ -24,7 +24,7 @@ export class NavComponent implements OnInit {
   }
 
   logout():void{
-    this.http.post("https://localhost:44300/Account/Logout", {}, {withCredentials:true})
+    this.http.post("http://localhost:32784/Account/Logout", {}, {withCredentials:true})
       .subscribe(res=>{
         this.authenticated=false;
         Emitters.authEmitter.emit(false);

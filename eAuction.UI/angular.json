@@ -60,10 +60,16 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "eAuction.UI:build:production"
+              "browserTarget": "eAuction.UI:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
-              "browserTarget": "eAuction.UI:build:development"
+              "browserTarget": "eAuction.UI:build:development",
+              "proxyConfig": "src/proxy.conf.json"
+            },
+            "options": {
+              "browserTarget": "move-safe:build",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
