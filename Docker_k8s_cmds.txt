@@ -26,3 +26,34 @@ docker run -d -p 30044:80 --name eAuction eauction:latest
 > kubectl get all
 > kubectl delete all --all --all-namespaces
 > kubectl apply -f <filename>.yaml
+
+------
+Dockerhub
+> docker logout
+> docker login
+
+> docker tag eauction navjyotgurhale0/eauction:latest
+> docker push navjyotgurhale0/eauction:latest
+
+> docker tag authenticationwebapi navjyotgurhale0/authenticationwebapi:latest
+> docker tag push navjyotgurhale0/authenticationwebapi:latest
+
+> docker tag buyerwebapi navjyotgurhale0/buyerwebapi:latest
+> docker tag push navjyotgurhale0/buyerwebapi:latest
+
+> docker tag buyerwebapi navjyotgurhale0/sellerwebapi:latest
+> docker tag push navjyotgurhale0/sellerwebapi:latest
+
+--------
+AWS
+-----
+(login)
+> aws configure
+
+(s3 list)
+> aws s3 ls
+
+(logout)
+> rm ~/.aws/config
+> rm ~/.aws/credentials
+> 
