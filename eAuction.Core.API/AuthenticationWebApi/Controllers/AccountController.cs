@@ -3,10 +3,12 @@ using AuthenticationWebApi.Repository;
 using JWTAuthenticationManager;
 using JWTAuthenticationManager.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,5 +88,31 @@ namespace AuthenticationWebApi.Controllers
             return SignOut();
         }
 
+        [HttpPost]
+        [Route("CreateRecipe")]
+        public async Task<ActionResult> CreateRecipe()
+        {
+            try
+            {
+                var mongoUri = "mongodb+srv://user001:3BPrSrGqUHYs7K6t@cluster0.nrqja1p.mongodb.net/?authSource=admin";
+                IMongoClient client1 = new MongoClient(mongoUri);
+                IMongoCollection<Recipe> collection;
+
+                var dbName = "myDatabase";
+                var collectionName = "recipes";
+
+                collection = client1.GetDatabase(dbName)
+                   .GetCollection<Recipe>(collectionName);
+
+                collection.InsertOne(new Recipe("elotes", new List<string>() { "corn", "mayonnaise", "cotija cheese", "sour cream", "lime" }, 35));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Something went wrong trying to insert the new documents." +
+                    $" Message: {e.Message}");
+                return StatusCode(StatusCodes.Status400BadRequest);
+            }
+            return StatusCode(StatusCodes.Status201Created);
+        }
     }
 }

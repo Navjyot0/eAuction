@@ -1,0 +1,89 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoapi
+  labels:
+    app: product-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: demoapi
+  template:
+    metadata:
+      labels:
+        app: product-app
+        service: demoapi
+    spec:
+      containers:
+        - name: demoapicontainer
+          image: demoapi:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demoapiservice
+  labels:
+    app: product-app
+    service: demoapi
+spec:
+  type: NodePort
+  ports:
+    - port: 8083
+      targetPort : 80
+      protocol: TCP
+      nodePort: 31001
+  selector:
+    service: demoapi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoapp
+  labels:
+    app: product-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: demoapp
+  template:
+    metadata:
+      labels:
+        app: product-app
+        service: demoapp
+    spec:
+      containers:
+        - name: demoappcontainer
+          image: demoapp:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: API_LINK
+              value: http://localhost:31001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demoappservice
+  labels:
+    app: product-app
+    service: demoapp
+spec:
+  type: NodePort
+  ports:
+    - port: 8083
+      targetPort : 80
+      protocol: TCP
+      nodePort: 31002
+  selector:
+    service: demoapp

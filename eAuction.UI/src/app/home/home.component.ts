@@ -22,7 +22,8 @@ export class HomeComponent implements OnInit {
     console.log(this.user);
     if(this.user!='' || this.user!=null)
     {
-      this.http.get("http://localhost:44397/e-auction/api/v1/seller/get-product")
+      // this.http.get("http://localhost:44397/e-auction/api/v1/seller/get-product")
+      this.http.get("http://localhost:30397/api/Product/GetProductList")
         .subscribe(res=>{
           this.products = res;
           console.log(res);

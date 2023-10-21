@@ -22,7 +22,7 @@ export class LoginComponent {
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    this.http.post("https://localhost:5001/Account", this.loginForm.value, {withCredentials:true})
+    this.http.post("http://localhost:30378/Account", this.loginForm.value, {withCredentials:true})
       .subscribe(res=>{
         this.router.navigate(['/']);
         Emitters.authEmitter.emit(true);

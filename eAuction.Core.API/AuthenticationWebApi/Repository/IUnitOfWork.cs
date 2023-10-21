@@ -8,6 +8,7 @@ namespace AuthenticationWebApi.Repository
     public interface IUnitOfWork //: IDisposable
     {
         IUserRepository user { get; }
+        IRecipeRepository recipe { get; }
         //int Complete();
     }
 }

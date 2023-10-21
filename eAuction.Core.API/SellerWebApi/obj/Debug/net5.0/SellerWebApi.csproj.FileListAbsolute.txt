@@ -288,12 +288,13 @@ D:\eAuction\eAuction\eAuction.Core.API\SellerWebApi\obj\Debug\net5.0\refint\Sell
 D:\eAuction\eAuction\eAuction.Core.API\SellerWebApi\obj\Debug\net5.0\SellerWebApi.pdb
 D:\eAuction\eAuction\eAuction.Core.API\SellerWebApi\obj\Debug\net5.0\SellerWebApi.genruntimeconfig.cache
 D:\eAuction\eAuction\eAuction.Core.API\SellerWebApi\obj\Debug\net5.0\ref\SellerWebApi.dll
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.runtimeconfig.json
+D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\appsettings.Development.json
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\appsettings.json
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.StaticWebAssets.xml
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.exe
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.deps.json
-D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.runtimeconfig.json
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.runtimeconfig.dev.json
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\SellerWebApi.pdb
@@ -317,7 +318,6 @@ D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\Snappier.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 D:\FSE_Navjyot\Git_Repo\eAuction\eAuction.Core.API\SellerWebApi\bin\Debug\net5.0\ZstdSharp.dll

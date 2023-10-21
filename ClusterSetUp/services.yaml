@@ -1,0 +1,68 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: authenticationwebapiservice
+  labels:
+    app: authenticationwebapi-app
+    service: authenticationwebapi
+spec:
+  type: NodePort
+  ports:
+    - port: 8083
+      targetPort : 80
+      protocol: TCP
+      nodePort: 30378
+  selector:
+    service: authenticationwebapi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eauctionservice
+  labels:
+    app: eauction-app
+    service: eauction
+spec:
+  type: NodePort
+  ports:
+    - port: 8083
+      targetPort : 80
+      protocol: TCP
+      nodePort: 30044
+  selector:
+    service: eauction
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sellerwebapi
+  labels:
+    app: sellerwebapi-app
+    service: sellerwebapi
+spec:
+  type: NodePort
+  ports:
+    - port: 8083
+      targetPort : 80
+      protocol: TCP
+      nodePort: 30397
+  selector:
+    service: sellerwebapi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: buyerwebapi
+  labels:
+    app: buyerwebapi-app
+    service: buyerwebapi
+spec:
+  type: NodePort
+  ports:
+    - port: 8083
+      targetPort : 80
+      protocol: TCP
+      nodePort: 30383
+  selector:
+    service: buyerwebapi
+---

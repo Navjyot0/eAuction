@@ -34,7 +34,8 @@ export class MakeBidComponent {
 
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    this.http.post("http://localhost:44383/e-auction/api/v1/buyer/place-bid", this.bidForm.value, {withCredentials:true})
+    // this.http.post("http://localhost:44383/e-auction/api/v1/buyer/place-bid", this.bidForm.value, {withCredentials:true})
+    this.http.post("http://localhost:30383/api/Buyer/PlaceBid", this.bidForm.value, {withCredentials:false})
     .subscribe(res=>{
       Emitters.authEmitter.emit(true);
       this.router.navigate(['/product-details/'+this.bidForm.value.productId]);

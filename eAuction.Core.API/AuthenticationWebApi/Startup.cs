@@ -32,6 +32,26 @@ namespace AuthenticationWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("CorsPolicy",
+            //        builder => builder.SetIsOriginAllowed(origin => true)
+            //            .AllowAnyOrigin()
+            //            .AllowAnyMethod()
+            //            .AllowAnyHeader()
+            //            //.AllowCredentials()
+            //            );
+            //});
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                    builder.SetIsOriginAllowed(_ => true)
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
+
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbConfig)).Get<MongoDbConfig>();
 
             services.AddIdentity<ApplicationUser, ApplicationRole>()
@@ -45,7 +65,7 @@ namespace AuthenticationWebApi
             services.AddSingleton<IMongoClient>(s => new MongoClient(Configuration.GetValue<string>("UserDbSettings:ConnectionString")));
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddCors();
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -57,13 +77,8 @@ namespace AuthenticationWebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseCors(builder =>
-            {
-                builder
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader();
-            });
+            //app.UseCors("CorsPolicy");
+            app.UseCors();
 
             if (env.IsDevelopment())
             {

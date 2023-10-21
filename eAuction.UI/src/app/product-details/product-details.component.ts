@@ -23,7 +23,8 @@ export class ProductDetailsComponent implements OnInit {
 
   getProductDetails(): void {
     this.id = this.route.snapshot.paramMap.get('productid');
-    this.http.get("http://localhost:44397/e-auction/api/v1/seller/show-bids?productId="+this.id)
+    // this.http.get("http://localhost:44397/e-auction/api/v1/seller/show-bids?productId="+this.id)
+    this.http.get("http://localhost:30397/api/Product/GetProductDetails?productId="+this.id)
         .subscribe(res=>{
             this.productDetails = res;
             console.log(res);

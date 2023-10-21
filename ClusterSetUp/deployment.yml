@@ -1,0 +1,112 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authenticationwebapi
+  labels:
+    app: authenticationwebapi-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: authenticationwebapi
+  template:
+    metadata:
+      labels:
+        app: authenticationwebapi-app
+        service: authenticationwebapi
+    spec:
+      containers:
+        - name: authenticationwebapicontainer
+          image: authenticationwebapi:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eauction
+  labels:
+    app: eauction-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: eauction
+  template:
+    metadata:
+      labels:
+        app: eauction-app
+        service: eauction
+    spec:
+      containers:
+        - name: eauctioncontainer
+          image: eauction:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: API_LINK
+              value: http://localhost:31001
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sellerwebapi
+  labels:
+    app: sellerwebapi-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: sellerwebapi
+  template:
+    metadata:
+      labels:
+        app: sellerwebapi-app
+        service: sellerwebapi
+    spec:
+      containers:
+        - name: sellerwebapicontainer
+          image: sellerwebapi:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: buyerwebapi
+  labels:
+    app: buyerwebapi-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: buyerwebapi
+  template:
+    metadata:
+      labels:
+        app: buyerwebapi-app
+        service: buyerwebapi
+    spec:
+      containers:
+        - name: buyerwebapicontainer
+          image: buyerwebapi:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://+:80
+---

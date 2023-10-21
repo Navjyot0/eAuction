@@ -1,0 +1,28 @@
+buyer 44383
+seller 44397
+Account 44378 
+Ocelot 44300
+
+> docker run -d -p 44300:80 --name OcelotAPIGateWay ocelotapigateway:latest
+> docker run -d -p 44383:80 --name BuyerWebAPI buyerwebapi:latest
+> docker run -d -p 44397:80 --name SellerWebAPI sellerwebapi:latest
+> docker run -d -p 44378:80 --name AuthenticationWebAPI authenticationwebapi:latest
+> docker run -d -p 44044:80 --name eAuction eauction:latest
+
+> docker pull mongo:latest
+> docker run --name mongodb -d -p 2717:27017 mongo:latest
+> docker run -d -p 27017-27019:27017-27019 --name mongodb mongo:latest
+> docker network create --driver bridge mongo_db
+
+> docker run -d -p 2717:27017 --net=mongo_db --name mongodb mongo
+
+
+docker run -d -p 30383:80 --name BuyerWebAPI buyerwebapi:latest
+docker run -d -p 30397:80 --name SellerWebAPI sellerwebapi:latest
+docker run -d -p 30378:80 --name AuthenticationWebAPI authenticationwebapi:latest
+docker run -d -p 30044:80 --name eAuction eauction:latest
+
+-----------------
+> kubectl get all
+> kubectl delete all --all --all-namespaces
+> kubectl apply -f <filename>.yaml
