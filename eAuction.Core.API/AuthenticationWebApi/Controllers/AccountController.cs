@@ -72,9 +72,9 @@ namespace AuthenticationWebApi.Controllers
 
             var response = HttpContext.Response;
             response.Cookies.Delete("jwtToken");
-            response.Cookies.Append("jwtToken", authenticationResponse.JWTToken, new CookieOptions() { SameSite = SameSiteMode.None, Secure = true });
+            response.Cookies.Append("jwtToken", authenticationResponse.JWTToken, new CookieOptions() { SameSite = SameSiteMode.None, Secure = false });
             response.Cookies.Delete("username");
-            response.Cookies.Append("username", authenticationResponse.UserName, new CookieOptions() { SameSite = SameSiteMode.None, Secure = true });
+            response.Cookies.Append("username", authenticationResponse.UserName, new CookieOptions() { SameSite = SameSiteMode.None, Secure = false });
 
             return authenticationResponse;
         }
